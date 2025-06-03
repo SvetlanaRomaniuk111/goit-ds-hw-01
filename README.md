@@ -14,7 +14,7 @@ docker build -t personal-assistant .
 Щоб потрапити у bash-оболонку контейнера, використовуйте:
 
 ```sh
-docker run -it personal-assistant /bin/bash
+docker run -it personal-assistant /bin/bash(docker run -it personal-assistant /bin/sh - Якщо Bash не встановлен)
 (або вказати назву контейнера: docker run -it --name assistant-bot personal-assistant /bin/bash)
 ```
 
