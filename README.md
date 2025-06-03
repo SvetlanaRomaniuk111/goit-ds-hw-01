@@ -45,3 +45,40 @@ python main.py
 
 - вийти з застосунку: exit
 ---
+
+## 4. Запуск контейнера з DockerHub
+
+Щоб завантажити та запустити контейнер безпосередньо з DockerHub, використовуйте:
+
+```sh
+docker run -it gatskosv/personal-assistant:latest /bin/bash
+```
+
+Після входу в контейнер запустіть застосунок:
+
+```sh
+python main.py
+```
+
+> Якщо тег не вказано, використовується latest за замовчуванням:
+> 
+> ```sh
+> docker run -it gatskosv/personal-assistant /bin/bash
+> ```
+
+---
+
+### Корисні Docker-команди
+
+- **Підключитися до вже запущеного контейнера:**
+  ```sh
+  docker exec -it <container-id> /bin/bash
+  ```
+- **Дізнатися ідентифікатор контейнера:**
+  ```sh
+  docker ps
+  ```
+- **Вийти з контейнера або застосунку:**
+  ```sh
+  exit
+  ```
